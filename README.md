@@ -2,7 +2,7 @@
 
 Type:
 
-``
+```
 npm install
 ```
 or

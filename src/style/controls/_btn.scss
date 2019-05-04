@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  padding: 14px 20px;
+  border: 1px solid #1dd2af;
+  border-radius: 4px;
+  background-color: #1dd2af;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #17202a;
+    color: #1dd2af;
+  }
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+
+  &--empty {
+    border-color: #ffffff;
+    background-color: transparent;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+
+    &:hover {
+      border-color: #1dd2af;
+    }
+  }
+}

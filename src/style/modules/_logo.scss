@@ -1,0 +1,59 @@
+.logo {
+  position: relative;
+  display: block;
+  font-size: 0;
+
+  &:hover {
+    &:before {
+      animation: plane-flying 2s linear infinite;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    transform: translate(0, -10px) rotate(20deg);
+    display: block;
+    width: 40px;
+    height: 20px;
+    opacity: 0;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 1131.53 379.304'%0Axml:space='preserve' class='plane'%3E%3Cpolygon fill='%230fa285' points='72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223 '/%3E%3Cpolygon fill='%230b836c' points='1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102 '/%3E%3C/svg%3E");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+    content: '';
+  }
+}
+
+@keyframes plane-flying {
+  50% {
+    transform: translate(73px, 0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(160px, -30px) rotate(-10deg);
+    opacity: 0;
+  }
+  // 20% {
+  //   transform: translate(25px, 0) rotate(15deg);
+  // }
+  // 40% {
+  //   transform: translate(25px, 0) rotate(15deg);
+  // }
+  // 60% {
+  //   transform: translate(50px, 10px) rotate(15deg);
+  // }
+  // 60% {
+  //   transform: translate(75px, 10px) rotate(-10deg);
+  // }
+  // 80% {
+  //   transform: translate(100px, 0) rotate(-10deg);
+  //   opacity: 1;
+  // }
+  // 100% {
+  //   transform: translate(145px, -10px) rotate(0deg);
+  //   opacity: 0;
+  // }
+}

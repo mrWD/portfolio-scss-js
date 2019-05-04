@@ -1,0 +1,30 @@
+.slider {
+  max-width: 100%;
+  overflow: hidden;
+
+  &__wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__carriege {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+
+    &:hover,
+    &.is-active {
+      opacity: 1;
+    }
+  }
+}

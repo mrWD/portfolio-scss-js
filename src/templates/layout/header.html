@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>New site</title>
+
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+
+  <body>
+
+    <a class="anchor js-anchor" href="#header"></a>
+
+    <header class="header" id="header">
+      <div class="header__top" data-dropdown-id="header-menu">
+        <div class="container">
+          <ul class="auth-list">
+            <li class="auth-list__el">
+              <a href="#" class="auth-list__link auth-list__link--user">
+                Agent login
+              </a>
+            </li>
+
+            <li class="auth-list__el">
+              <a href="#" class="auth-list__link auth-list__link--user">
+                Customer Login
+              </a>
+            </li>
+
+            <li class="auth-list__el">
+              <a href="#" class="auth-list__link auth-list__link--list">
+                <span class="auth-list__tablet-text">Not a Member ?</span> <mark class="marked-text">Register</mark>
+              </a>
+            </li>
+
+            <li class="auth-list__el">
+              <a href="tel:815-123-4567" class="auth-list__link">
+                <span class="auth-list__tablet-text">Call Us Now :</span>815-123-4567
+              </a>
+            </li>
+          </ul>
+
+          <ul class="soc-list">
+            <li class="soc-list__el">
+              <a class="soc-list__link" href="https://www.facebook.com/">
+                //= ../../svg/fb.html
+              </a>
+            </li>
+
+            <li class="soc-list__el">
+              <a class="soc-list__link" href="https://twitter.com/">
+                //= ../../svg/twitter.html
+              </a>
+            </li>
+
+            <li class="soc-list__el">
+              <a class="soc-list__link" href="https://www.tumblr.com/">
+                //= ../../svg/tumblr.html
+              </a>
+            </li>
+
+            <li class="soc-list__el">
+              <a class="soc-list__link" href="https://www.pinterest.com/">
+                //= ../../svg/pinterest.html
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="/img/logo.png" alt="Voyage - touristic company">
+          </a>
+
+          <button class="burger js-show-dropdown" data-dropdown-target="header-menu" type="button">
+            <hr class="burger__layer"></hr>
+            <hr class="burger__layer"></hr>
+            <hr class="burger__layer"></hr>
+          </button>
+
+          <nav class="nav" data-dropdown-id="header-menu">
+            <ul class="nav__list">
+              <li class="nav__el">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+
+              <li class="nav__el">
+                <a href="#" class="nav__link">Destinations</a>
+              </li>
+
+              <li class="nav__el">
+                <a href="#" class="nav__link">Criuses</a>
+              </li>
+
+              <li class="nav__el">
+                <a href="#" class="nav__link">Specials</a>
+              </li>
+
+              <li class="nav__el">
+                <a href="#" class="nav__link">Holidays</a>
+              </li>
+
+              <li class="nav__el">
+                <a href="#" class="nav__link">Blog</a>
+              </li>
+            </ul>
+
+            <a
+              class="header__search dropdown-search__btn js-anchor"
+              href="#search"
+              >
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>

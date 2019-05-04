@@ -1,0 +1,19 @@
+.testimonials {
+  padding-top: 62px;
+  padding-bottom: 114px;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 49px;
+  }
+
+  .slider__wrapper {
+    @media only screen and (min-width: 1200px) {
+      width: 475px;
+    }
+  }
+
+}

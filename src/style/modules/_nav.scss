@@ -1,0 +1,133 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  background-color: #ffffff;
+  transition: transform 0.3s;
+
+  &.is-open {
+    transform: translateY(0);
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    position: static;
+    transform: translateY(0);
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-bottom: 30px;
+
+    @media only screen and (min-width: 768px) {
+      order: 1;
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      order: 0;
+      margin-right: 33px;
+    }
+  }
+
+  &__el {
+    display: block;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0;
+        margin-right: 38px;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5d6e80;
+    transition: color 0.3s;
+
+    &.is-active,
+    &:hover,
+    &:focus {
+      color: #1dd2af;
+    }
+  }
+
+  &--alter {
+    position: static;
+    transform: translateY(0);
+    display: block;
+    justify-content: center;
+    background-color: transparent;
+
+    .nav__list {
+      justify-content: center;
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    .nav__link {
+      text-transform: none;
+      color: #ffffff;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #1dd2af;
+      }
+    }
+
+    .nav__el {
+      @media only screen and (min-width: 1200px) {
+        margin-right: 0;
+        background-image: linear-gradient(0deg, #fff, #fff),
+          linear-gradient(0deg, #fff, #fff),
+          linear-gradient(0deg, #fff, #fff),
+          linear-gradient(0deg, #fff, #fff);
+        background-size: 2px 2px;
+        background-repeat: no-repeat;
+        background-position: 100% calc(50% - 2px),
+          100% calc(50% + 2px),
+          calc(100% - 4px) calc(50% - 2px),
+          calc(100% - 4px) calc(50% + 2px);
+
+        &:not(:last-child) {
+          margin-right: 9px;
+          padding-right: 18px;
+        }
+      }
+    }
+  }
+}

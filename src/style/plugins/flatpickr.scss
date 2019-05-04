@@ -1,0 +1,21 @@
+.flatpickr-current-month span.cur-month {
+  color: #2c3e50;
+}
+
+.flatpickr-months {
+  .flatpickr-month {
+    color: #2c3e50;
+  }
+
+  .flatpickr-next-month,
+  .flatpickr-prev-month {
+    svg {
+      fill: #2c3e50
+    }
+  }
+}
+
+span.flatpickr-weekday,
+.flatpickr-day {
+  color: #626262;
+}

@@ -1,0 +1,30 @@
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  &__el {
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    display: block;
+    max-width: 100%;
+    padding: 5px 6px;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: #ffffff;
+    transition: border-color 0.3s, color 0.3s;
+
+    &:hover {
+      border-color: #1dd2af;
+      color: #1dd2af;
+    }
+  }
+}

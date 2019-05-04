@@ -1,0 +1,98 @@
+.holidays {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 117px;
+  background-color: #2c3e50;
+  background-image: url('../img/holidays-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #ffffff;
+
+  &__title {
+    margin-bottom: 9px;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    color: #9fb0c0;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: block;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    &:hover {
+      .holidays__name {
+        color: #1dd2af;
+      }
+
+      .holidays__img-wrap {
+        border-color: #1dd2af;
+        fill: #1dd2af;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 33.3333333%;
+
+      &:nth-child(n + 3) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      width: 16.666667%;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 157px;
+    height: 157px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid #f5f6f7;
+    border-radius: 50%;
+    fill: #f5f6f7;
+    transition: border-color 0.3s, fill 0.3s;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__name {
+    color: #9fb0c0;
+    transition: color 0.3s;
+  }
+}

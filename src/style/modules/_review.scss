@@ -20,7 +20,7 @@
     height: 64px;
     border-right: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
-    background-color: #ffffff;
+    background-color: $white-color;
     content: '';
     transition: bottom 0.3s, transform 0.3s, width 0.3s, height 0.3s;
   }
@@ -28,7 +28,7 @@
   &:hover,
   .is-active & {
     opacity: 1;
-    box-shadow: inset 0 4px #1dd2af;
+    box-shadow: inset 0 4px $active-color;
 
     &:after {
       bottom: -15px;
@@ -38,7 +38,7 @@
     }
   }
 
-  @media only screen and (min-width: 1200px) {
+  @include respond-from-min($desktop) {
     width: 475px;
   }
 
@@ -46,7 +46,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
-    color: #1dd2af;
+    color: $active-color;
   }
 
   &__location {

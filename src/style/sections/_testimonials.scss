@@ -11,7 +11,7 @@
   }
 
   .slider__wrapper {
-    @media only screen and (min-width: 1200px) {
+    @include respond-from-min($desktop) {
       width: 475px;
     }
   }

@@ -14,17 +14,17 @@
     display: block;
     max-width: 100%;
     padding: 5px 6px;
-    border: 1px solid #ffffff;
+    border: 1px solid $white-color;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-decoration: none;
-    color: #ffffff;
+    color: $white-color;
     transition: border-color 0.3s, color 0.3s;
 
     &:hover {
-      border-color: #1dd2af;
-      color: #1dd2af;
+      border-color: $active-color;
+      color: $active-color;
     }
   }
 }

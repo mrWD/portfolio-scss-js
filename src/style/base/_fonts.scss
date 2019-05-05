@@ -1,23 +1,23 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto/regular/Roboto.woff') format('woff'),
-       url('../fonts/Roboto/regular/Roboto.woff2') format('woff2');
+  src: url($font-route + 'Roboto/regular/Roboto.woff') format('woff'),
+       url($font-route + 'Roboto/regular/Roboto.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto/medium/Roboto.woff') format('woff'),
-       url('../fonts/Roboto/medium/Roboto.woff2') format('woff2');
+  src: url($font-route + 'Roboto/medium/Roboto.woff') format('woff'),
+       url($font-route + 'Roboto/medium/Roboto.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto/bold/Roboto.woff') format('woff'),
-       url('../fonts/Roboto/bold/Roboto.woff2') format('woff2');
+  src: url($font-route + 'Roboto/bold/Roboto.woff') format('woff'),
+       url($font-route + 'Roboto/bold/Roboto.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }

@@ -9,7 +9,7 @@
   &__subtitle {
     margin-bottom: 28px;
 
-    @media only screen and (min-width: 1200px) {
+    @include respond-from-min($desktop) {
       margin-bottom: 58px;
     }
   }

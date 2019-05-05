@@ -2,14 +2,14 @@
   position: relative;
   padding-top: 75px;
   padding-bottom: 117px;
-  background-color: #2c3e50;
-  background-image: url('../img/holidays-bg.png');
+  background-color: $main-color;
+  background-image: url($img-routes + 'holidays-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   text-align: center;
-  color: #ffffff;
+  color: $white-color;
 
   &__title {
     margin-bottom: 9px;
@@ -17,9 +17,9 @@
 
   &__subtitle {
     margin-bottom: 40px;
-    color: #9fb0c0;
+    color: $gray-light-color;
 
-    @media only screen and (min-width: 768px) {
+    @include respond-from-min($tablet) {
       margin-bottom: 70px;
     }
   }
@@ -28,7 +28,7 @@
     margin: 0;
     padding: 0;
 
-    @media only screen and (min-width: 768px) {
+    @include respond-from-min($tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -42,12 +42,12 @@
 
     &:hover {
       .holidays__name {
-        color: #1dd2af;
+        color: $active-color;
       }
 
       .holidays__img-wrap {
-        border-color: #1dd2af;
-        fill: #1dd2af;
+        border-color: $active-color;
+        fill: $active-color;
       }
     }
 
@@ -55,7 +55,7 @@
       margin-bottom: 30px;
     }
 
-    @media only screen and (min-width: 768px) {
+    @include respond-from-min($tablet) {
       width: 33.3333333%;
 
       &:nth-child(n + 3) {
@@ -63,7 +63,7 @@
       }
     }
 
-    @media only screen and (min-width: 1200px) {
+    @include respond-from-min($desktop) {
       width: 16.666667%;
 
       &:not(:last-child) {
@@ -81,18 +81,18 @@
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    border: 8px solid #f5f6f7;
+    border: 8px solid $gray-lighten-color;
     border-radius: 50%;
-    fill: #f5f6f7;
+    fill: $gray-lighten-color;
     transition: border-color 0.3s, fill 0.3s;
 
-    @media only screen and (min-width: 768px) {
+    @include respond-from-min($tablet) {
       margin-bottom: 18px;
     }
   }
 
   &__name {
-    color: #9fb0c0;
+    color: $gray-light-color;
     transition: color 0.3s;
   }
 }

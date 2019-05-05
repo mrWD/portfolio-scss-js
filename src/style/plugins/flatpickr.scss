@@ -1,21 +1,21 @@
 .flatpickr-current-month span.cur-month {
-  color: #2c3e50;
+  color: $main-color;
 }
 
 .flatpickr-months {
   .flatpickr-month {
-    color: #2c3e50;
+    color: $main-color;
   }
 
   .flatpickr-next-month,
   .flatpickr-prev-month {
     svg {
-      fill: #2c3e50
+      fill: $main-color
     }
   }
 }
 
 span.flatpickr-weekday,
 .flatpickr-day {
-  color: #626262;
+  color: $gray-color;
 }

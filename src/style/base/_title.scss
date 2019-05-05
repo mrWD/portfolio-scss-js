@@ -12,11 +12,11 @@
   font-weight: 600;
   text-transform: uppercase;
 
-  @media only screen and (min-width: 768px) {
+  @include respond-from-min($tablet) {
     font-size: 40px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @include respond-from-min($desktop) {
     font-size: 50px;
   }
 }
@@ -35,18 +35,18 @@
 .subtitle-1 {
   font-size: 18px;
 
-  @media only screen and (min-width: 768px) {
+  @include respond-from-min($tablet) {
     font-size: 22px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @include respond-from-min($desktop) {
     font-size: 25px;
   }
 }
 
 .subtitle-2 {
   font-size: 16px;
-  color: #626262;
+  color: $gray-color;
   text-align: center;
 }
 
@@ -59,6 +59,6 @@
 }
 
 .marked-text {
-  color: #1dd2af;
+  color: $active-color;
   background-color: transparent;
 }

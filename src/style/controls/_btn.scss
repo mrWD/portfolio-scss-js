@@ -1,13 +1,13 @@
 .btn {
   display: inline-block;
   padding: 14px 20px;
-  border: 1px solid #1dd2af;
+  border: 1px solid $active-color;
   border-radius: 4px;
-  background-color: #1dd2af;
+  background-color: $active-color;
   font-size: 16px;
   line-height: 1;
   font-weight: 500;
-  color: #ffffff;
+  color: $white-color;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -15,24 +15,24 @@
 
   &:hover {
     background-color: #17202a;
-    color: #1dd2af;
+    color: $active-color;
   }
 
-  @media only screen and (min-width: 768px) {
+  @include respond-from-min($tablet) {
     font-size: 20px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @include respond-from-min($desktop) {
     font-size: 20px;
   }
 
   &--empty {
-    border-color: #ffffff;
+    border-color: $white-color;
     background-color: transparent;
     transition: border-color 0.3s, background-color 0.3s, color 0.3s;
 
     &:hover {
-      border-color: #1dd2af;
+      border-color: $active-color;
     }
   }
 }

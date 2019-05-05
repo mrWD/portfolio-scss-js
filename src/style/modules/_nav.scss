@@ -10,19 +10,19 @@
   align-items: center;
   padding-bottom: 30px;
   padding-top: 20px;
-  background-color: #ffffff;
+  background-color: $white-color;
   transition: transform 0.3s;
 
   &.is-open {
     transform: translateY(0);
   }
 
-  @media only screen and (min-width: 768px) {
+  @include respond-from-min($tablet) {
     flex-direction: row;
     padding-bottom: 20px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @include respond-from-min($desktop) {
     position: static;
     transform: translateY(0);
     display: flex;
@@ -42,13 +42,13 @@
     padding-left: 0;
     margin-bottom: 30px;
 
-    @media only screen and (min-width: 768px) {
+    @include respond-from-min($tablet) {
       order: 1;
       flex-direction: row;
       margin-bottom: 0;
     }
 
-    @media only screen and (min-width: 1200px) {
+    @include respond-from-min($desktop) {
       order: 0;
       margin-right: 33px;
     }
@@ -61,7 +61,7 @@
       margin-bottom: 30px;
     }
 
-    @media only screen and (min-width: 768px) {
+    @include respond-from-min($tablet) {
       margin-bottom: 0;
 
       &:not(:last-of-type) {
@@ -82,7 +82,7 @@
     &.is-active,
     &:hover,
     &:focus {
-      color: #1dd2af;
+      color: $active-color;
     }
   }
 
@@ -101,21 +101,21 @@
 
     .nav__link {
       text-transform: none;
-      color: #ffffff;
+      color: $white-color;
       transition: color 0.3s;
 
       &:hover {
-        color: #1dd2af;
+        color: $active-color;
       }
     }
 
     .nav__el {
-      @media only screen and (min-width: 1200px) {
+      @include respond-from-min($desktop) {
         margin-right: 0;
-        background-image: linear-gradient(0deg, #fff, #fff),
-          linear-gradient(0deg, #fff, #fff),
-          linear-gradient(0deg, #fff, #fff),
-          linear-gradient(0deg, #fff, #fff);
+        background-image: linear-gradient(0deg, $white-color, $white-color),
+          linear-gradient(0deg, $white-color, $white-color),
+          linear-gradient(0deg, $white-color, $white-color),
+          linear-gradient(0deg, $white-color, $white-color);
         background-size: 2px 2px;
         background-repeat: no-repeat;
         background-position: 100% calc(50% - 2px),
